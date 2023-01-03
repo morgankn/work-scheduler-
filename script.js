@@ -1,5 +1,6 @@
 // need to make global variables
-var currentTime = dayjs().hour(12) 
+var currentTime = dayjs().hour(12);
+var currentHour = dayjs().hour();
 $('#time').text(currentTime);
 
 
@@ -24,8 +25,12 @@ $('#hour-9').children('.description').val(info);
 // text areas and inputs use value val() in Jquery 
 // .each loop 
 
+var hourList = ['hour-9','' ]
+// .split - array of hour and nine 
 
+// compare to day.js .hour 
 
+// Change hours to 24 format loop through, concat 
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
